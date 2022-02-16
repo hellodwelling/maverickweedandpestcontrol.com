@@ -1477,7 +1477,7 @@ We provide attention to detail for our chemical remediation service for oil fiel
                         // let radius = Array.from(document.getElementsByClassName("radius")).map(i => {
                         // return Number(i.innerHTML.trim())
                         // })
-                        let radius = 50
+                        let radius = 450
                         let city = document.querySelector('#city').innerText
                         let state = document.querySelector('#state').innerText
                         let url = `https://maps.googleapis.com/maps/api/geocode/json?address=${city}+${state}&key=AIzaSyDqq7K5Aj5_4wzi7NGzphVphTEJOZcE9dA`
@@ -1488,7 +1488,7 @@ We provide attention to detail for our chemical remediation service for oil fiel
                 
                         // Create the map.
                         const map = new google.maps.Map(document.getElementById("map"), {
-                        zoom: 8,
+                        zoom: 5,
                         center: { lat: coordinates[0], lng: coordinates[1]},
                         mapTypeId: "terrain",
                         });
@@ -1723,7 +1723,7 @@ We provide attention to detail for our chemical remediation service for oil fiel
                                 <a
                                     href="#"
                                     class="p-1 text-base text-gray-500 rounded hover:text-gray-900 focus:ring-2 focus:outline-none ring-primary ring-opacity-75"
-                                    >Mercury, TX</a
+                                    >All of Texas</a
                                 >
                             </li>
                             
