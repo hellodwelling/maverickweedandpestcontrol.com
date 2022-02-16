@@ -2846,7 +2846,7 @@ We take the time to inspect your property for signs of termites and treat them a
             <p id="proudLocation" class="text-xl text-gray-500">
                 <!-- Proudly serving Austin, TX and surrounding areas <br /><br />
                 Georgetown, Round Rock, Bastrop, Marble Falls, Burnet -->
-                Proudly Serving   Mercury & Surrounding Areas  
+                Proudly Serving   all of Texas  
             </p>
         </div>
         <!-- Map -->
@@ -2899,7 +2899,7 @@ We take the time to inspect your property for signs of termites and treat them a
                         // let radius = Array.from(document.getElementsByClassName("radius")).map(i => {
                         // return Number(i.innerHTML.trim())
                         // })
-                        let radius = 500
+                        let radius = 450
                         let city = document.querySelector('#city').innerText
                         let state = document.querySelector('#state').innerText
                         let url = `https://maps.googleapis.com/maps/api/geocode/json?address=${city}+${state}&key=AIzaSyDqq7K5Aj5_4wzi7NGzphVphTEJOZcE9dA`
@@ -2910,7 +2910,7 @@ We take the time to inspect your property for signs of termites and treat them a
                 
                         // Create the map.
                         const map = new google.maps.Map(document.getElementById("map"), {
-                        zoom: 8,
+                        zoom: 5,
                         center: { lat: coordinates[0], lng: coordinates[1]},
                         mapTypeId: "terrain",
                         });
