@@ -1,13 +1,17 @@
 
 
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Landscaping &amp; Hardscaping in  Austin,  TX 78701 | Maverick Weed &amp; Pest Control |  Service | service-R.O.W.-Vegetation-Management </title>
+        <title>Landscaping &amp; Hardscaping in Mercury, TX | Maverick Weed &amp; Pest Control |  Service | R.o.w. Vegetation Management</title>
+        <meta name="description" content="">
         <!-- <title>ProPhone Templates</title> -->
         <!-- TailwindCSS  -->
         <!-- <link rel="stylesheet" type="text/css" href="/staticfiles/landing_page_gen/tailwind.css"> -->
@@ -18,7 +22,7 @@
            
 
         
-        <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
+        <link defer href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
         <!-- Include Scripts -->
         <!-- Header Component, only used for presentation -->
 
@@ -34,7 +38,7 @@
 <script defer src="https://unpkg.com/alpinejs@3.7.0/dist/cdn.min.js"></script>
 <!-- Focus Visible Polyfill -->
 <script defer src="https://unpkg.com/focus-visible@5.2.0/dist/focus-visible.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script> -->
         <style>
@@ -58,7 +62,7 @@
                 --color-primary-foreground: hsl(0, 0%, var(--switch));
             }
         </style>
-                <script type="text/javascript">
+                <script type="text/javascript" defer>
                     function send_sms(slug){
                         console.log('send_sms', slug)
                         // var sender_fname = $(`#${form_num}-first-name`).val()
@@ -92,8 +96,7 @@
                         var sender_services = ""
         
                         console.log("text", slug, sender_fname, sender_lname, sender_number, sender_message)
-                        // return ' bucks'
-                        // fetch('http://127.0.0.1:8000/sms/' + slug , {
+
                         fetch('https://prophone.herokuapp.com/sms/' + slug , {
                             method: 'POST',
                             body: JSON.stringify({
@@ -422,19 +425,8 @@ We take the time to inspect your property for signs of termites and treat them a
                                         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                 <!-- Render each sublink -->
-                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Weed Remediation&#x27;, &#x27;href&#x27;: &#x27;gallery-Weed-Remediation&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Pest Control&#x27;, &#x27;href&#x27;: &#x27;gallery-Pest-Control&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Termite Treatment&#x27;, &#x27;href&#x27;: &#x27;gallery-Termite-Treatment&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
+                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Pest Control&#x27;, &#x27;href&#x27;: &#x27;gallery-Pest-Control&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Termite Treatment&#x27;, &#x27;href&#x27;: &#x27;gallery-Termite-Treatment&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Weed Remediation&#x27;, &#x27;href&#x27;: &#x27;gallery-Weed-Remediation&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
                                                   
-                                                    <a
-                                                        href=" gallery-Weed-Remediation "
-                                                        role="menuitem"
-                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
-                                                    >
-                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">Weed Remediation</p>
-                                                    </a>
-                                                <!-- </each> -->
-                                               <!--  -->
-                                                 
                                                     <a
                                                         href=" gallery-Pest-Control "
                                                         role="menuitem"
@@ -453,6 +445,17 @@ We take the time to inspect your property for signs of termites and treat them a
                                                     >
                                                         <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                         <p class="mt-1 text-sm text-gray-500">Termite Treatment</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
+                                                    <a
+                                                        href=" gallery-Weed-Remediation "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">Weed Remediation</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
@@ -734,12 +737,6 @@ We take the time to inspect your property for signs of termites and treat them a
                                         <div class="relative grid gap-6 px-5 py-2 bg-white rounded-lg">
                                             <!-- Render each sublink -->
                                             
-                                                <a href="gallery-Weed-Remediation" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">Weed Remediation</p>
-                                                </a>
-                                            <!-- </each> -->
-                                            
                                                 <a href="gallery-Pest-Control" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Pest Control</p>
@@ -749,6 +746,12 @@ We take the time to inspect your property for signs of termites and treat them a
                                                 <a href="gallery-Termite-Treatment" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Termite Treatment</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
+                                                <a href="gallery-Weed-Remediation" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">Weed Remediation</p>
                                                 </a>
                                             <!-- </each> -->
                                             
@@ -970,36 +973,11 @@ We provide attention to detail for our chemical remediation service for oil fiel
                                 <li class="translate-z-0" role="option">
                                     <div class="flex flex-col items-center justify-center w-full p-2 overflow-hidden">
                                         <div class="h-[229px] sm:h-[481px] overflow-hidden rounded-lg">
-                                            <!-- <img class="object-cover" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/54052ae9-9160-4980-9fa4-57e40646462d.jpeg" alt="" /> -->
-                                            <!-- <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/54052ae9-9160-4980-9fa4-57e40646462d.jpeg" alt="" /> -->
-                                            <img class="object-cover" 
-                                                src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/54052ae9-9160-4980-9fa4-57e40646462d.jpeg" 
-                                                alt="" 
-                                                style="
-                                                    max-width: 960px;
-                                                    height: auto;
-                                                    max-height: 600px;
-                                                    margin: auto;
-                                                "
-                                            >
-                                            <!-- <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/54052ae9-9160-4980-9fa4-57e40646462d.jpeg" alt="" /> -->
-                                        </div>
-                                        <!-- <p class="hidden mt-3 text-gray-500 sm:block"> -->
-                                            <!-- TODO: Insert {&#x27;photo&#x27;: &#x27;https://landing-page-app-hero-images.s3.amazonaws.com/media/54052ae9-9160-4980-9fa4-57e40646462d.jpeg&#x27;, &#x27;order&#x27;: 0, &#x27;fileName&#x27;: &#x27;54052ae9-9160-4980-9fa4-57e40646462d.jpeg&#x27;} here instead of fixed text -->
-                                            <!--  -->
-                                            <!-- Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. -->
-                                        <!-- </p> -->
-                                    </div>
-                                </li>
-                            
-                                <li class="translate-z-0" role="option">
-                                    <div class="flex flex-col items-center justify-center w-full p-2 overflow-hidden">
-                                        <div class="h-[229px] sm:h-[481px] overflow-hidden rounded-lg">
                                             <!-- <img class="object-cover" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/debc1bdb-a1fd-4d38-b39d-7dc130df3b7b.jpeg" alt="" /> -->
                                             <!-- <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/debc1bdb-a1fd-4d38-b39d-7dc130df3b7b.jpeg" alt="" /> -->
                                             <img class="object-cover" 
                                                 src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/debc1bdb-a1fd-4d38-b39d-7dc130df3b7b.jpeg" 
-                                                alt="" 
+                                                alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX"
                                                 style="
                                                     max-width: 960px;
                                                     height: auto;
@@ -1010,7 +988,7 @@ We provide attention to detail for our chemical remediation service for oil fiel
                                             <!-- <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/debc1bdb-a1fd-4d38-b39d-7dc130df3b7b.jpeg" alt="" /> -->
                                         </div>
                                         <!-- <p class="hidden mt-3 text-gray-500 sm:block"> -->
-                                            <!-- TODO: Insert {&#x27;photo&#x27;: &#x27;https://landing-page-app-hero-images.s3.amazonaws.com/media/debc1bdb-a1fd-4d38-b39d-7dc130df3b7b.jpeg&#x27;, &#x27;order&#x27;: 1, &#x27;fileName&#x27;: &#x27;debc1bdb-a1fd-4d38-b39d-7dc130df3b7b.jpeg&#x27;} here instead of fixed text -->
+                                            <!-- TODO: Insert {&#x27;photo&#x27;: &#x27;https://landing-page-app-hero-images.s3.amazonaws.com/media/debc1bdb-a1fd-4d38-b39d-7dc130df3b7b.jpeg&#x27;, &#x27;order&#x27;: 0, &#x27;fileName&#x27;: &#x27;debc1bdb-a1fd-4d38-b39d-7dc130df3b7b.jpeg&#x27;} here instead of fixed text -->
                                             <!--  -->
                                             <!-- Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. -->
                                         <!-- </p> -->
@@ -1024,7 +1002,7 @@ We provide attention to detail for our chemical remediation service for oil fiel
                                             <!-- <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/177dd9cd-122b-46fb-afe3-a07ad8ab5ac1.jpeg" alt="" /> -->
                                             <img class="object-cover" 
                                                 src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/177dd9cd-122b-46fb-afe3-a07ad8ab5ac1.jpeg" 
-                                                alt="" 
+                                                alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX"
                                                 style="
                                                     max-width: 960px;
                                                     height: auto;
@@ -1035,7 +1013,32 @@ We provide attention to detail for our chemical remediation service for oil fiel
                                             <!-- <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/177dd9cd-122b-46fb-afe3-a07ad8ab5ac1.jpeg" alt="" /> -->
                                         </div>
                                         <!-- <p class="hidden mt-3 text-gray-500 sm:block"> -->
-                                            <!-- TODO: Insert {&#x27;photo&#x27;: &#x27;https://landing-page-app-hero-images.s3.amazonaws.com/media/177dd9cd-122b-46fb-afe3-a07ad8ab5ac1.jpeg&#x27;, &#x27;order&#x27;: 2, &#x27;fileName&#x27;: &#x27;177dd9cd-122b-46fb-afe3-a07ad8ab5ac1.jpeg&#x27;} here instead of fixed text -->
+                                            <!-- TODO: Insert {&#x27;photo&#x27;: &#x27;https://landing-page-app-hero-images.s3.amazonaws.com/media/177dd9cd-122b-46fb-afe3-a07ad8ab5ac1.jpeg&#x27;, &#x27;order&#x27;: 1, &#x27;fileName&#x27;: &#x27;177dd9cd-122b-46fb-afe3-a07ad8ab5ac1.jpeg&#x27;} here instead of fixed text -->
+                                            <!--  -->
+                                            <!-- Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. -->
+                                        <!-- </p> -->
+                                    </div>
+                                </li>
+                            
+                                <li class="translate-z-0" role="option">
+                                    <div class="flex flex-col items-center justify-center w-full p-2 overflow-hidden">
+                                        <div class="h-[229px] sm:h-[481px] overflow-hidden rounded-lg">
+                                            <!-- <img class="object-cover" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/54052ae9-9160-4980-9fa4-57e40646462d.jpeg" alt="" /> -->
+                                            <!-- <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/54052ae9-9160-4980-9fa4-57e40646462d.jpeg" alt="" /> -->
+                                            <img class="object-cover" 
+                                                src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/54052ae9-9160-4980-9fa4-57e40646462d.jpeg" 
+                                                alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX"
+                                                style="
+                                                    max-width: 960px;
+                                                    height: auto;
+                                                    max-height: 600px;
+                                                    margin: auto;
+                                                "
+                                            >
+                                            <!-- <img class="object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1026x720/media/54052ae9-9160-4980-9fa4-57e40646462d.jpeg" alt="" /> -->
+                                        </div>
+                                        <!-- <p class="hidden mt-3 text-gray-500 sm:block"> -->
+                                            <!-- TODO: Insert {&#x27;photo&#x27;: &#x27;https://landing-page-app-hero-images.s3.amazonaws.com/media/54052ae9-9160-4980-9fa4-57e40646462d.jpeg&#x27;, &#x27;order&#x27;: 2, &#x27;fileName&#x27;: &#x27;54052ae9-9160-4980-9fa4-57e40646462d.jpeg&#x27;} here instead of fixed text -->
                                             <!--  -->
                                             <!-- Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. Cabin in the woods with recently landscaped. -->
                                         <!-- </p> -->
@@ -1210,6 +1213,96 @@ We provide attention to detail for our chemical remediation service for oil fiel
                                         />
                                     </svg>
                                     <p lorem="1" class="relative text-lg font-medium">
+                                        They sprayed our trucking yard for weeds and highly recommend Josh and his team!
+                                    </p>
+                                </div>
+                                <footer class="flex items-center justify-between mt-8 space-x-4">
+                                    <div>
+                                        <span class="block font-medium text-primary">Michael N</span>
+                                        <span class="block font-medium">Pecos, TX</span>
+                                    </div>
+
+                                    <!-- Social Icon -->
+                                    <div class="flex-shrink-0">
+                                        <span class="sr-only">None</span>
+                                        
+                                    
+                                    </div>
+                                </footer>
+                            </blockquote>
+                        </li>
+                    
+                    
+                </ul>
+            
+                <!-- Single Testimonial Column -->
+                <ul class="space-y-8">
+                    <!-- Loop each of the items (rows) here -->
+                    
+                    
+                    
+
+                        <!-- Review Item -->
+                        <li class=" hidden sm:block  px-6 py-8 rounded-lg shadow md:px-8 xl:pl-16 xl:pr-6 bg-gray-50">
+                            <!-- Star Rating -->
+                            <div class="flex">
+                                <div aria-hidden="true" class="space-x-1.5 flex">
+                                    <!-- TODO: Simply use a for loop here `for i = 1; i < amountOfStars; i++` -->
+                                    
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                </div>
+                                <!-- TODO: Add the current amount of stars here -->
+                                <span class="sr-only"> out of 5 stars</span>
+                            </div>
+
+                            <blockquote class="mt-6">
+                                <div class="relative">
+                                    <svg
+                                        aria-hidden="true"
+                                        class="absolute top-0 left-0 w-8 h-8 text-gray-200 -translate-x-3 -translate-y-2"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4Zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                    <p lorem="1" class="relative text-lg font-medium">
                                         Treated my house for a termite infestation that I had and would highly recommend Maverick Weed &amp; Pest ⭐⭐⭐⭐⭐
                                     </p>
                                 </div>
@@ -1221,22 +1314,7 @@ We provide attention to detail for our chemical remediation service for oil fiel
 
                                     <!-- Social Icon -->
                                     <div class="flex-shrink-0">
-                                        <span class="sr-only">Facebook</span>
-                                        
-                                        <svg
-                                            aria-hidden="true"
-                                            class="text-blue-900 transition-transform w-7 h-7"
-                                            viewBox="0 0 30 30"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
+                                        <span class="sr-only">None</span>
                                         
                                     
                                     </div>
@@ -1326,127 +1404,7 @@ We provide attention to detail for our chemical remediation service for oil fiel
 
                                     <!-- Social Icon -->
                                     <div class="flex-shrink-0">
-                                        <span class="sr-only">Facebook</span>
-                                        
-                                        <svg
-                                            aria-hidden="true"
-                                            class="text-blue-900 transition-transform w-7 h-7"
-                                            viewBox="0 0 30 30"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
-                                        
-                                    
-                                    </div>
-                                </footer>
-                            </blockquote>
-                        </li>
-                    
-                    
-                </ul>
-            
-                <!-- Single Testimonial Column -->
-                <ul class="space-y-8">
-                    <!-- Loop each of the items (rows) here -->
-                    
-                    
-                    
-
-                        <!-- Review Item -->
-                        <li class=" hidden sm:block  px-6 py-8 rounded-lg shadow md:px-8 xl:pl-16 xl:pr-6 bg-gray-50">
-                            <!-- Star Rating -->
-                            <div class="flex">
-                                <div aria-hidden="true" class="space-x-1.5 flex">
-                                    <!-- TODO: Simply use a for loop here `for i = 1; i < amountOfStars; i++` -->
-                                    
-                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
-                                            <path
-                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
-                                    
-                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
-                                            <path
-                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
-                                    
-                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
-                                            <path
-                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
-                                    
-                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
-                                            <path
-                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
-                                    
-                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
-                                            <path
-                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
-                                    
-                                </div>
-                                <!-- TODO: Add the current amount of stars here -->
-                                <span class="sr-only"> out of 5 stars</span>
-                            </div>
-
-                            <blockquote class="mt-6">
-                                <div class="relative">
-                                    <svg
-                                        aria-hidden="true"
-                                        class="absolute top-0 left-0 w-8 h-8 text-gray-200 -translate-x-3 -translate-y-2"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4Zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4Z"
-                                            fill="currentColor"
-                                        />
-                                    </svg>
-                                    <p lorem="1" class="relative text-lg font-medium">
-                                        They sprayed our trucking yard for weeds and highly recommend Josh and his team!
-                                    </p>
-                                </div>
-                                <footer class="flex items-center justify-between mt-8 space-x-4">
-                                    <div>
-                                        <span class="block font-medium text-primary">Michael N</span>
-                                        <span class="block font-medium">Pecos, TX</span>
-                                    </div>
-
-                                    <!-- Social Icon -->
-                                    <div class="flex-shrink-0">
-                                        <span class="sr-only">Facebook</span>
-                                        
-                                        <svg
-                                            aria-hidden="true"
-                                            class="text-blue-900 transition-transform w-7 h-7"
-                                            viewBox="0 0 30 30"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
+                                        <span class="sr-only">None</span>
                                         
                                     
                                     </div>
@@ -1496,7 +1454,7 @@ We provide attention to detail for our chemical remediation service for oil fiel
             <p id="proudLocation" class="text-xl text-gray-500">
                 <!-- Proudly serving Austin, TX and surrounding areas <br /><br />
                 Georgetown, Round Rock, Bastrop, Marble Falls, Burnet -->
-                Proudly Serving   All of Texas  
+                Proudly Serving   Mercury & Surrounding Areas  
             </p>
         </div>
         <!-- Map -->
@@ -1530,7 +1488,7 @@ We provide attention to detail for our chemical remediation service for oil fiel
                 <!-- Your map here -->
                 <div class="w-full h-full bg-gray-400">
                     <div style="height:500px; width:100%;" id="map"></div>
-                    <script >
+                    <script defer>
                         async function coordinate(url) {
                             const res = await fetch(url)
                             const coordinates = await res.json()
@@ -1562,7 +1520,7 @@ We provide attention to detail for our chemical remediation service for oil fiel
                 
                         // Create the map.
                         const map = new google.maps.Map(document.getElementById("map"), {
-                        zoom: 5,
+                        zoom: 8,
                         center: { lat: coordinates[0], lng: coordinates[1]},
                         mapTypeId: "terrain",
                         });
@@ -1588,6 +1546,7 @@ We provide attention to detail for our chemical remediation service for oil fiel
                     </script>
                     <script
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSw3qRocbSgfTrtxZbCsTjSHZaaJuUXF4&callback=initMap&libraries=&v=weekly"
+                    defer
                     async
                   ></script> 
               
@@ -1667,7 +1626,7 @@ We provide attention to detail for our chemical remediation service for oil fiel
               <p class="text-base text-gray-100">
                   Maverick Weed &amp; Pest Control<br/>
                    
-                      All of Texas <br/>
+                      Mercury, TX <br/>
                   
                   (432) 448-4913
                   <!-- Is this supposed to be here and correct?  -->
@@ -1676,7 +1635,7 @@ We provide attention to detail for our chemical remediation service for oil fiel
               <div class="flex space-x-6">
                   <!-- are these conditional? and linked to corret links? -->
                   
-                  <a target="_blank" rel="noopener noreferrer" href="//facebook.com/profile.php?id=100063816742181" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
+                  <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/profile.php?id=100063816742181" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
                       <span class="sr-only">Facebook</span>
                       <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path
@@ -1710,7 +1669,7 @@ We provide attention to detail for our chemical remediation service for oil fiel
                   
                   
                   
-                  <a target="_blank" rel="noopener noreferrer" href="//www.bbb.org/us/tx/pecos/profile/pest-control/maverick-weed-and-pest-control-0825-1000170553" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.bbb.org/us/tx/pecos/profile/pest-control/maverick-weed-and-pest-control-0825-1000170553" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
                       <span class="sr-only">Tiktok</span>
                       <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path d="M9.43752 0.0166667C10.5292 0 11.6125 0.00833333 12.6959 0C12.7625 1.275 13.2209 2.575 14.1542 3.475C15.0875 4.4 16.4042 4.825 17.6875 4.96667V8.325C16.4875 8.28333 15.2792 8.03333 14.1875 7.51667C13.7125 7.3 13.2709 7.025 12.8375 6.74167C12.8292 9.175 12.8459 11.6083 12.8209 14.0333C12.7542 15.2 12.3709 16.3583 11.6959 17.3167C10.6042 18.9167 8.71252 19.9583 6.77085 19.9917C5.57919 20.0583 4.38752 19.7333 3.37085 19.1333C1.68752 18.1417 0.504186 16.325 0.329186 14.375C0.312519 13.9583 0.304186 13.5417 0.320852 13.1333C0.470852 11.55 1.25419 10.0333 2.47085 9C3.85419 7.8 5.78752 7.225 7.59585 7.56667C7.61252 8.8 7.56252 10.0333 7.56252 11.2667C6.73752 11 5.77085 11.075 5.04585 11.575C4.52085 11.9167 4.12085 12.4417 3.91252 13.0333C3.73752 13.4583 3.78752 13.925 3.79585 14.375C3.99585 15.7417 5.31252 16.8917 6.71252 16.7667C7.64585 16.7583 8.53752 16.2167 9.02085 15.425C9.17918 15.15 9.35419 14.8667 9.36252 14.5417C9.44585 13.05 9.41252 11.5667 9.42085 10.075C9.42919 6.71667 9.41252 3.36667 9.43752 0.0166667V0.0166667Z" fill="#9CA3AF"/>
@@ -1756,6 +1715,13 @@ We provide attention to detail for our chemical remediation service for oil fiel
                           
                           
                           
+                          <li>
+                              <a
+                                  href='sitemap.xml'
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Sitemap</a
+                              >
+                          </li>
                       </ul>
                   </div>
                   <!-- Services Links -->
@@ -1801,7 +1767,7 @@ We provide attention to detail for our chemical remediation service for oil fiel
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
-                                  >All of Texas</a
+                                  >Mercury, TX</a
                               >
                           </li>
                           
@@ -2045,32 +2011,32 @@ We provide attention to detail for our chemical remediation service for oil fiel
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-143118"
-                                            name="143118"
+                                            id="contact-service-157887"
+                                            name="157887"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-143118" class="ml-3 text-sm font-medium text-gray-700">R.O.W. Vegetation Management</label>
+                                        <label for="contact-label-service-157887" class="ml-3 text-sm font-medium text-gray-700">R.O.W. Vegetation Management</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-143119"
-                                            name="143119"
+                                            id="contact-service-157888"
+                                            name="157888"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-143119" class="ml-3 text-sm font-medium text-gray-700">Termite Treatment</label>
+                                        <label for="contact-label-service-157888" class="ml-3 text-sm font-medium text-gray-700">Termite Treatment</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-143120"
-                                            name="143120"
+                                            id="contact-service-157889"
+                                            name="157889"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-143120" class="ml-3 text-sm font-medium text-gray-700">General Pest Control</label>
+                                        <label for="contact-label-service-157889" class="ml-3 text-sm font-medium text-gray-700">General Pest Control</label>
                                     </div>
                                 
                             </div>
@@ -2232,7 +2198,7 @@ We provide attention to detail for our chemical remediation service for oil fiel
                     <!-- Yelp Link -->
                     
                     <li>
-                        <a target="_blank" rel="noopener noreferrer" href="//https://facebook.com/profile.php?id=100063816742181/reviews" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/profile.php?id=100063816742181/reviews" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
                     </li>
                     
                 </ul>
