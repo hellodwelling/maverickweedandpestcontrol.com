@@ -1,13 +1,17 @@
 
 
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Landscaping &amp; Hardscaping in  Austin,  TX 78701 | Maverick Weed &amp; Pest Control |  Home </title>
+        <title>Landscaping &amp; Hardscaping in Mercury, TX | Maverick Weed &amp; Pest Control |  Home</title>
+        <meta name="description" content="Maverick Weed &amp; Pest Control is West Texas&#x27;s most trusted pest control service.">
         <!-- <title>ProPhone Templates</title> -->
         <!-- TailwindCSS  -->
         <!-- <link rel="stylesheet" type="text/css" href="/staticfiles/landing_page_gen/tailwind.css"> -->
@@ -18,7 +22,7 @@
            
 
         
-        <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
+        <link defer href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
         <!-- Include Scripts -->
         <!-- Header Component, only used for presentation -->
 
@@ -34,7 +38,7 @@
 <script defer src="https://unpkg.com/alpinejs@3.7.0/dist/cdn.min.js"></script>
 <!-- Focus Visible Polyfill -->
 <script defer src="https://unpkg.com/focus-visible@5.2.0/dist/focus-visible.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script> -->
         <style>
@@ -58,7 +62,7 @@
                 --color-primary-foreground: hsl(0, 0%, var(--switch));
             }
         </style>
-                <script type="text/javascript">
+                <script type="text/javascript" defer>
                     function send_sms(slug){
                         console.log('send_sms', slug)
                         // var sender_fname = $(`#${form_num}-first-name`).val()
@@ -92,8 +96,7 @@
                         var sender_services = ""
         
                         console.log("text", slug, sender_fname, sender_lname, sender_number, sender_message)
-                        // return ' bucks'
-                        // fetch('http://127.0.0.1:8000/sms/' + slug , {
+
                         fetch('https://prophone.herokuapp.com/sms/' + slug , {
                             method: 'POST',
                             body: JSON.stringify({
@@ -422,19 +425,8 @@ We take the time to inspect your property for signs of termites and treat them a
                                         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                 <!-- Render each sublink -->
-                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Weed Remediation&#x27;, &#x27;href&#x27;: &#x27;gallery-Weed-Remediation&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Pest Control&#x27;, &#x27;href&#x27;: &#x27;gallery-Pest-Control&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Termite Treatment&#x27;, &#x27;href&#x27;: &#x27;gallery-Termite-Treatment&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
+                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Pest Control&#x27;, &#x27;href&#x27;: &#x27;gallery-Pest-Control&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Termite Treatment&#x27;, &#x27;href&#x27;: &#x27;gallery-Termite-Treatment&#x27;}, {&#x27;title&#x27;: &#x27;Our Best Work&#x27;, &#x27;copy&#x27;: &#x27;Weed Remediation&#x27;, &#x27;href&#x27;: &#x27;gallery-Weed-Remediation&#x27;}, {&#x27;title&#x27;: &#x27;All Photos&#x27;, &#x27;copy&#x27;: &#x27;All Photos&#x27;, &#x27;href&#x27;: &#x27;gallery-All&#x27;}]"> -->
                                                   
-                                                    <a
-                                                        href=" gallery-Weed-Remediation "
-                                                        role="menuitem"
-                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
-                                                    >
-                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                        <p class="mt-1 text-sm text-gray-500">Weed Remediation</p>
-                                                    </a>
-                                                <!-- </each> -->
-                                               <!--  -->
-                                                 
                                                     <a
                                                         href=" gallery-Pest-Control "
                                                         role="menuitem"
@@ -453,6 +445,17 @@ We take the time to inspect your property for signs of termites and treat them a
                                                     >
                                                         <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                         <p class="mt-1 text-sm text-gray-500">Termite Treatment</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
+                                                    <a
+                                                        href=" gallery-Weed-Remediation "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">Weed Remediation</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
@@ -734,12 +737,6 @@ We take the time to inspect your property for signs of termites and treat them a
                                         <div class="relative grid gap-6 px-5 py-2 bg-white rounded-lg">
                                             <!-- Render each sublink -->
                                             
-                                                <a href="gallery-Weed-Remediation" role="menuitem" class="block p-3 -m-3 transition rounded-md">
-                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
-                                                    <p class="mt-1 text-sm text-gray-500">Weed Remediation</p>
-                                                </a>
-                                            <!-- </each> -->
-                                            
                                                 <a href="gallery-Pest-Control" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Pest Control</p>
@@ -749,6 +746,12 @@ We take the time to inspect your property for signs of termites and treat them a
                                                 <a href="gallery-Termite-Treatment" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                     <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
                                                     <p class="mt-1 text-sm text-gray-500">Termite Treatment</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
+                                                <a href="gallery-Weed-Remediation" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">Our Best Work</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">Weed Remediation</p>
                                                 </a>
                                             <!-- </each> -->
                                             
@@ -887,52 +890,15 @@ We take the time to inspect your property for signs of termites and treat them a
     <div
         x-data="{
         activeImage: 1,
-        amountOfImages: 5,
+        amountOfImages: 1,
         loop() {
             setInterval(() => { this.activeImage = this.activeImage === this.amountOfImages ? 1 : this.activeImage + 1 }, 5000)
         },
-    }"
-        x-init="loop"
-        class="relative flex w-full overflow-x-hidden h-72 md:h-96 lg:h-full lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
-    >
+        }"
+            x-init="loop"
+            class="relative flex w-full overflow-x-hidden h-72 md:h-96 lg:h-full lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
+        >
         <!-- Transition Wrapper 1 -->
-        <!-- <div
-            class="absolute inset-0"
-            x-show="activeImage === 1"
-            x-transition:enter="transition duration-1000"
-            x-transition:enter-start="transform translate-x-full"
-            x-transition:enter-end="transform translate-x-0"
-            x-transition:leave="transition duration-1000"
-            x-transition:leave-start="transform"
-            x-transition:leave-end="transform -translate-x-full"
-        >
-            <img
-                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                src="https://landing-page-app-hero-images.s3.amazonaws.com/media/177dd9cd-122b-46fb-afe3-a07ad8ab5ac1.jpeg"
-                alt=""
-            />
-        </div> -->
-        <!-- Transition Wrapper 2 -->
-        <!-- TODO: Add x-cloak to all transition wrappers exept the first one to avoid a flashing on load -->
-        <!-- <div
-            x-cloak
-            class="absolute inset-0"
-            x-show="activeImage === 2"
-            x-transition:enter="transition duration-1000"
-            x-transition:enter-start="transform translate-x-full"
-            x-transition:enter-end="transform translate-x-0"
-            x-transition:leave="transition duration-1000"
-            x-transition:leave-start="transform"
-            x-transition:leave-end="transform -translate-x-full"
-        >
-            <img
-                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                src="https://images.unsplash.com/photo-1484863137850-59afcfe05386?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2048&q=80"
-                alt=""
-            />
-        </div> -->
-
-        
         <div
             class="absolute inset-0"
             x-show="activeImage === 1"
@@ -943,82 +909,13 @@ We take the time to inspect your property for signs of termites and treat them a
             x-transition:leave-start="transform"
             x-transition:leave-end="transform -translate-x-full"
         >
-            <img
-                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                src="https://landing-page-app-hero-images.s3.amazonaws.com/media/177dd9cd-122b-46fb-afe3-a07ad8ab5ac1.jpeg"
-                alt="-image"
-            />
-        </div>
         
-        <div
-            class="absolute inset-0"
-            x-show="activeImage === 2"
-            x-transition:enter="transition duration-1000"
-            x-transition:enter-start="transform translate-x-full"
-            x-transition:enter-end="transform translate-x-0"
-            x-transition:leave="transition duration-1000"
-            x-transition:leave-start="transform"
-            x-transition:leave-end="transform -translate-x-full"
-        >
-            <img
-                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                src="https://landing-page-app-hero-images.s3.amazonaws.com/media/10fe6e44-18e0-4eab-ab22-6c3fd1f5fb9f.jpeg"
-                alt="-image"
-            />
-        </div>
+            <video class="object-cover w-full lg:absolute h-80 lg:h-full" autoplay loop muted playsinline >
+            <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/DJI_0002.mp4" type = "video/mp4" >
+            </video>
         
-        <div
-            class="absolute inset-0"
-            x-show="activeImage === 3"
-            x-transition:enter="transition duration-1000"
-            x-transition:enter-start="transform translate-x-full"
-            x-transition:enter-end="transform translate-x-0"
-            x-transition:leave="transition duration-1000"
-            x-transition:leave-start="transform"
-            x-transition:leave-end="transform -translate-x-full"
-        >
-            <img
-                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                src="https://landing-page-app-hero-images.s3.amazonaws.com/media/8f076af8-b749-4cc1-86a3-266ae71ed729.jpeg"
-                alt="-image"
-            />
+            
         </div>
-        
-        <div
-            class="absolute inset-0"
-            x-show="activeImage === 4"
-            x-transition:enter="transition duration-1000"
-            x-transition:enter-start="transform translate-x-full"
-            x-transition:enter-end="transform translate-x-0"
-            x-transition:leave="transition duration-1000"
-            x-transition:leave-start="transform"
-            x-transition:leave-end="transform -translate-x-full"
-        >
-            <img
-                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                src="https://landing-page-app-hero-images.s3.amazonaws.com/media/b4dc0a87-d049-4aef-9f02-10f8dcfdfc04.jpeg"
-                alt="-image"
-            />
-        </div>
-        
-        <div
-            class="absolute inset-0"
-            x-show="activeImage === 5"
-            x-transition:enter="transition duration-1000"
-            x-transition:enter-start="transform translate-x-full"
-            x-transition:enter-end="transform translate-x-0"
-            x-transition:leave="transition duration-1000"
-            x-transition:leave-start="transform"
-            x-transition:leave-end="transform -translate-x-full"
-        >
-            <img
-                class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                src="https://landing-page-app-hero-images.s3.amazonaws.com/media/0176a220-10aa-4dfb-a2d1-e0dca2bf26d0.jpeg"
-                alt="-image"
-            />
-        </div>
-        
-        <!-- More images here -->
     </div>
     
 </div>
@@ -1133,7 +1030,8 @@ We take the time to inspect your property for signs of termites and treat them a
                               
                                   
                                       <img 
-                                        src="https://landing-page-app-hero-images.s3.amazonaws.com/media/8dcd774e-d705-484b-9cc3-4b55da8ed6ec.jpeg"   alt="About Us Image"  
+                                        src="https://landing-page-app-hero-images.s3.amazonaws.com/media/8dcd774e-d705-484b-9cc3-4b55da8ed6ec.jpeg"
+                                        alt="Maverick Weed &amp; Pest Control team in Mercury, TX - people or person"
                                         class="w-auto h-auto max-h-full max-w-full"
                                         loading="lazy"
                                       >
@@ -1168,7 +1066,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                               <a
                                 target="_blank" rel="noopener noreferrer"   
                                   class="inline-flex items-center justify-center p-1 rounded-full  group focus:outline-none focus:ring-2 ring-white ring-offset-2 ring-offset-primary"
-                                  href="//facebook.com/profile.php?id=100063816742181"
+                                  href="https://facebook.com/profile.php?id=100063816742181"
                               >
                                   <!-- Screen Reader Fallback -->
                                   <span class="sr-only">Facebook</span>
@@ -1209,7 +1107,7 @@ Our Guarantee: Expert quality every time. We don&#x27;t consider a job done unti
                               <a
                                   class="inline-flex items-center justify-center p-1 rounded-full  group focus:outline-none focus:ring-2 ring-white ring-offset-2 ring-offset-primary"
                                   target="_blank" rel="noopener noreferrer"
-                                  href="//www.bbb.org/us/tx/pecos/profile/pest-control/maverick-weed-and-pest-control-0825-1000170553"
+                                  href="https://www.bbb.org/us/tx/pecos/profile/pest-control/maverick-weed-and-pest-control-0825-1000170553"
                               >
                                   <span class="sr-only">BBB</span>
                                   <svg width="27" height="36" viewBox="0 0 27 36" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -1349,7 +1247,7 @@ We provide attention to detail for our chemical remediation service for oil fiel
                             <!-- Image -->
                             <img
                                 class="object-cover grayscale"
-                                src="https://i.imgur.com/lpuzfnG.jpg"
+                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
                                 alt=""
                             />
                         </a>
@@ -1407,7 +1305,7 @@ We take the time to inspect your property for signs of termites and treat them a
                             <!-- Image -->
                             <img
                                 class="object-cover grayscale"
-                                src="https://i.imgur.com/5rBuQf3.png"
+                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
                                 alt=""
                             />
                         </a>
@@ -1462,7 +1360,7 @@ We take the time to inspect your property for signs of termites and treat them a
                             <!-- Image -->
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
                                 alt=""
                             />
                         </a>
@@ -1687,7 +1585,7 @@ We take the time to inspect your property for signs of termites and treat them a
 <div
     x-data="{
         activeImage: 0,
-        amountOfImages: 20,
+        amountOfImages: 21,
         next() {
             if (this.activeImage < this.amountOfImages - 1)
                 this.activeImage ++;
@@ -1708,51 +1606,9 @@ We take the time to inspect your property for signs of termites and treat them a
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 0; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ef3efbb2-d06c-4799-8854-a5606acfed01.jpeg" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/ef3efbb2-d06c-4799-8854-a5606acfed01.jpeg" alt="" loading="lazy"/>
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ef3efbb2-d06c-4799-8854-a5606acfed01.jpeg" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/ef3efbb2-d06c-4799-8854-a5606acfed01.jpeg" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 1; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3462a2c3-6a95-4f27-a041-d68e5ac5c185.jpeg" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/3462a2c3-6a95-4f27-a041-d68e5ac5c185.jpeg" alt="" loading="lazy"/>
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3462a2c3-6a95-4f27-a041-d68e5ac5c185.jpeg" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/3462a2c3-6a95-4f27-a041-d68e5ac5c185.jpeg" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/10fe6e44-18e0-4eab-ab22-6c3fd1f5fb9f.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/10fe6e44-18e0-4eab-ab22-6c3fd1f5fb9f.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/10fe6e44-18e0-4eab-ab22-6c3fd1f5fb9f.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/10fe6e44-18e0-4eab-ab22-6c3fd1f5fb9f.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/10fe6e44-18e0-4eab-ab22-6c3fd1f5fb9f.jpeg" alt="" /> -->
                             
@@ -1769,11 +1625,32 @@ We take the time to inspect your property for signs of termites and treat them a
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 1; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ef3efbb2-d06c-4799-8854-a5606acfed01.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/ef3efbb2-d06c-4799-8854-a5606acfed01.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ef3efbb2-d06c-4799-8854-a5606acfed01.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/ef3efbb2-d06c-4799-8854-a5606acfed01.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/cbe49465-0546-4404-9d03-15536ce70ff7.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/cbe49465-0546-4404-9d03-15536ce70ff7.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/cbe49465-0546-4404-9d03-15536ce70ff7.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/cbe49465-0546-4404-9d03-15536ce70ff7.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/cbe49465-0546-4404-9d03-15536ce70ff7.jpeg" alt="" /> -->
                             
@@ -1790,13 +1667,34 @@ We take the time to inspect your property for signs of termites and treat them a
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3462a2c3-6a95-4f27-a041-d68e5ac5c185.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/3462a2c3-6a95-4f27-a041-d68e5ac5c185.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3462a2c3-6a95-4f27-a041-d68e5ac5c185.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/3462a2c3-6a95-4f27-a041-d68e5ac5c185.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/fe5a1214-a6ec-4bae-92d7-d43e55f32dbd.jpeg" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/99d021d6-d9e8-4f86-bfb2-60a8d6dc4c9b.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/fe5a1214-a6ec-4bae-92d7-d43e55f32dbd.jpeg" alt="" loading="lazy"/>
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/fe5a1214-a6ec-4bae-92d7-d43e55f32dbd.jpeg" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/fe5a1214-a6ec-4bae-92d7-d43e55f32dbd.jpeg" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/99d021d6-d9e8-4f86-bfb2-60a8d6dc4c9b.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/99d021d6-d9e8-4f86-bfb2-60a8d6dc4c9b.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/99d021d6-d9e8-4f86-bfb2-60a8d6dc4c9b.jpeg" alt="" /> -->
                             
                         </div>
 
@@ -1813,11 +1711,11 @@ We take the time to inspect your property for signs of termites and treat them a
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 5; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/99d021d6-d9e8-4f86-bfb2-60a8d6dc4c9b.jpeg" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/fe5a1214-a6ec-4bae-92d7-d43e55f32dbd.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/99d021d6-d9e8-4f86-bfb2-60a8d6dc4c9b.jpeg" alt="" loading="lazy"/>
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/99d021d6-d9e8-4f86-bfb2-60a8d6dc4c9b.jpeg" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/99d021d6-d9e8-4f86-bfb2-60a8d6dc4c9b.jpeg" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/fe5a1214-a6ec-4bae-92d7-d43e55f32dbd.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/fe5a1214-a6ec-4bae-92d7-d43e55f32dbd.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/fe5a1214-a6ec-4bae-92d7-d43e55f32dbd.jpeg" alt="" /> -->
                             
                         </div>
 
@@ -1836,7 +1734,7 @@ We take the time to inspect your property for signs of termites and treat them a
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8f076af8-b749-4cc1-86a3-266ae71ed729.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/8f076af8-b749-4cc1-86a3-266ae71ed729.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/8f076af8-b749-4cc1-86a3-266ae71ed729.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8f076af8-b749-4cc1-86a3-266ae71ed729.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/8f076af8-b749-4cc1-86a3-266ae71ed729.jpeg" alt="" /> -->
                             
@@ -1855,11 +1753,11 @@ We take the time to inspect your property for signs of termites and treat them a
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 7; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b4dc0a87-d049-4aef-9f02-10f8dcfdfc04.jpeg" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0176a220-10aa-4dfb-a2d1-e0dca2bf26d0.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/b4dc0a87-d049-4aef-9f02-10f8dcfdfc04.jpeg" alt="" loading="lazy"/>
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b4dc0a87-d049-4aef-9f02-10f8dcfdfc04.jpeg" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/b4dc0a87-d049-4aef-9f02-10f8dcfdfc04.jpeg" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/0176a220-10aa-4dfb-a2d1-e0dca2bf26d0.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0176a220-10aa-4dfb-a2d1-e0dca2bf26d0.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/0176a220-10aa-4dfb-a2d1-e0dca2bf26d0.jpeg" alt="" /> -->
                             
                         </div>
 
@@ -1876,11 +1774,11 @@ We take the time to inspect your property for signs of termites and treat them a
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 8; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0176a220-10aa-4dfb-a2d1-e0dca2bf26d0.jpeg" alt="" /> -->
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b4dc0a87-d049-4aef-9f02-10f8dcfdfc04.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/0176a220-10aa-4dfb-a2d1-e0dca2bf26d0.jpeg" alt="" loading="lazy"/>
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0176a220-10aa-4dfb-a2d1-e0dca2bf26d0.jpeg" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/0176a220-10aa-4dfb-a2d1-e0dca2bf26d0.jpeg" alt="" /> -->
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/b4dc0a87-d049-4aef-9f02-10f8dcfdfc04.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b4dc0a87-d049-4aef-9f02-10f8dcfdfc04.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/b4dc0a87-d049-4aef-9f02-10f8dcfdfc04.jpeg" alt="" /> -->
                             
                         </div>
 
@@ -1899,7 +1797,7 @@ We take the time to inspect your property for signs of termites and treat them a
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c998f0ee-2f8c-445d-9f05-12c655f21031.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/c998f0ee-2f8c-445d-9f05-12c655f21031.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/c998f0ee-2f8c-445d-9f05-12c655f21031.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c998f0ee-2f8c-445d-9f05-12c655f21031.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/c998f0ee-2f8c-445d-9f05-12c655f21031.jpeg" alt="" /> -->
                             
@@ -1920,7 +1818,7 @@ We take the time to inspect your property for signs of termites and treat them a
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bf74a54c-f1ca-4191-a320-373fc1868ae2.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/bf74a54c-f1ca-4191-a320-373fc1868ae2.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/bf74a54c-f1ca-4191-a320-373fc1868ae2.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bf74a54c-f1ca-4191-a320-373fc1868ae2.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/bf74a54c-f1ca-4191-a320-373fc1868ae2.jpeg" alt="" /> -->
                             
@@ -1941,7 +1839,7 @@ We take the time to inspect your property for signs of termites and treat them a
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/6076ed3c-e9a3-49f1-aa28-39738ff6883a.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/6076ed3c-e9a3-49f1-aa28-39738ff6883a.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/6076ed3c-e9a3-49f1-aa28-39738ff6883a.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/6076ed3c-e9a3-49f1-aa28-39738ff6883a.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/6076ed3c-e9a3-49f1-aa28-39738ff6883a.jpeg" alt="" /> -->
                             
@@ -1962,7 +1860,7 @@ We take the time to inspect your property for signs of termites and treat them a
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e6e656c5-e14d-4fd6-995f-ec7e6c456f25.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e6e656c5-e14d-4fd6-995f-ec7e6c456f25.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/e6e656c5-e14d-4fd6-995f-ec7e6c456f25.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e6e656c5-e14d-4fd6-995f-ec7e6c456f25.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/e6e656c5-e14d-4fd6-995f-ec7e6c456f25.jpeg" alt="" /> -->
                             
@@ -1983,7 +1881,7 @@ We take the time to inspect your property for signs of termites and treat them a
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/03cd3417-4c0c-49a9-906c-ed16ab1470bf.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/03cd3417-4c0c-49a9-906c-ed16ab1470bf.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/03cd3417-4c0c-49a9-906c-ed16ab1470bf.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/03cd3417-4c0c-49a9-906c-ed16ab1470bf.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/03cd3417-4c0c-49a9-906c-ed16ab1470bf.jpeg" alt="" /> -->
                             
@@ -2004,7 +1902,7 @@ We take the time to inspect your property for signs of termites and treat them a
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/cd194a83-fb1c-4d49-9880-6e5875300c73.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/cd194a83-fb1c-4d49-9880-6e5875300c73.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/cd194a83-fb1c-4d49-9880-6e5875300c73.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/cd194a83-fb1c-4d49-9880-6e5875300c73.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/cd194a83-fb1c-4d49-9880-6e5875300c73.jpeg" alt="" /> -->
                             
@@ -2025,7 +1923,7 @@ We take the time to inspect your property for signs of termites and treat them a
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b8038de8-41fc-46f6-b85e-7cebf7e9909a.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/b8038de8-41fc-46f6-b85e-7cebf7e9909a.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/b8038de8-41fc-46f6-b85e-7cebf7e9909a.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b8038de8-41fc-46f6-b85e-7cebf7e9909a.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/b8038de8-41fc-46f6-b85e-7cebf7e9909a.jpeg" alt="" /> -->
                             
@@ -2046,7 +1944,7 @@ We take the time to inspect your property for signs of termites and treat them a
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/177dd9cd-122b-46fb-afe3-a07ad8ab5ac1.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/177dd9cd-122b-46fb-afe3-a07ad8ab5ac1.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/177dd9cd-122b-46fb-afe3-a07ad8ab5ac1.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/177dd9cd-122b-46fb-afe3-a07ad8ab5ac1.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/177dd9cd-122b-46fb-afe3-a07ad8ab5ac1.jpeg" alt="" /> -->
                             
@@ -2067,7 +1965,7 @@ We take the time to inspect your property for signs of termites and treat them a
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/debc1bdb-a1fd-4d38-b39d-7dc130df3b7b.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/debc1bdb-a1fd-4d38-b39d-7dc130df3b7b.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/debc1bdb-a1fd-4d38-b39d-7dc130df3b7b.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/debc1bdb-a1fd-4d38-b39d-7dc130df3b7b.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/debc1bdb-a1fd-4d38-b39d-7dc130df3b7b.jpeg" alt="" /> -->
                             
@@ -2088,7 +1986,7 @@ We take the time to inspect your property for signs of termites and treat them a
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/54052ae9-9160-4980-9fa4-57e40646462d.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/54052ae9-9160-4980-9fa4-57e40646462d.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/54052ae9-9160-4980-9fa4-57e40646462d.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/54052ae9-9160-4980-9fa4-57e40646462d.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/54052ae9-9160-4980-9fa4-57e40646462d.jpeg" alt="" /> -->
                             
@@ -2109,9 +2007,30 @@ We take the time to inspect your property for signs of termites and treat them a
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/11b95833-d871-4d70-998d-d630701813cd.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/11b95833-d871-4d70-998d-d630701813cd.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/11b95833-d871-4d70-998d-d630701813cd.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/11b95833-d871-4d70-998d-d630701813cd.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/11b95833-d871-4d70-998d-d630701813cd.jpeg" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" hidden ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 20; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/17bbf0f8-3f86-4d2a-96f1-b84ab7dc1157.jpeg" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/17bbf0f8-3f86-4d2a-96f1-b84ab7dc1157.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/17bbf0f8-3f86-4d2a-96f1-b84ab7dc1157.jpeg" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/17bbf0f8-3f86-4d2a-96f1-b84ab7dc1157.jpeg" alt="" /> -->
                             
                         </div>
 
@@ -2174,7 +2093,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 0">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ef3efbb2-d06c-4799-8854-a5606acfed01.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/10fe6e44-18e0-4eab-ab22-6c3fd1f5fb9f.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2182,7 +2101,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 1">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3462a2c3-6a95-4f27-a041-d68e5ac5c185.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ef3efbb2-d06c-4799-8854-a5606acfed01.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2190,7 +2109,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 2">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/10fe6e44-18e0-4eab-ab22-6c3fd1f5fb9f.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/cbe49465-0546-4404-9d03-15536ce70ff7.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2198,7 +2117,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 3">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/cbe49465-0546-4404-9d03-15536ce70ff7.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3462a2c3-6a95-4f27-a041-d68e5ac5c185.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2206,7 +2125,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 4">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/fe5a1214-a6ec-4bae-92d7-d43e55f32dbd.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/99d021d6-d9e8-4f86-bfb2-60a8d6dc4c9b.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2214,7 +2133,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 5">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/99d021d6-d9e8-4f86-bfb2-60a8d6dc4c9b.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/fe5a1214-a6ec-4bae-92d7-d43e55f32dbd.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2222,7 +2141,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 6">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8f076af8-b749-4cc1-86a3-266ae71ed729.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8f076af8-b749-4cc1-86a3-266ae71ed729.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2230,7 +2149,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 7">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b4dc0a87-d049-4aef-9f02-10f8dcfdfc04.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0176a220-10aa-4dfb-a2d1-e0dca2bf26d0.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2238,7 +2157,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 8">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0176a220-10aa-4dfb-a2d1-e0dca2bf26d0.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b4dc0a87-d049-4aef-9f02-10f8dcfdfc04.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2246,7 +2165,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 9">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c998f0ee-2f8c-445d-9f05-12c655f21031.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c998f0ee-2f8c-445d-9f05-12c655f21031.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2254,7 +2173,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 10">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bf74a54c-f1ca-4191-a320-373fc1868ae2.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/bf74a54c-f1ca-4191-a320-373fc1868ae2.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2262,7 +2181,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 11">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/6076ed3c-e9a3-49f1-aa28-39738ff6883a.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/6076ed3c-e9a3-49f1-aa28-39738ff6883a.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2270,7 +2189,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 12">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e6e656c5-e14d-4fd6-995f-ec7e6c456f25.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/e6e656c5-e14d-4fd6-995f-ec7e6c456f25.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2278,7 +2197,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 13">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/03cd3417-4c0c-49a9-906c-ed16ab1470bf.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/03cd3417-4c0c-49a9-906c-ed16ab1470bf.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2286,7 +2205,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 14">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/cd194a83-fb1c-4d49-9880-6e5875300c73.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/cd194a83-fb1c-4d49-9880-6e5875300c73.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2294,7 +2213,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 15">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b8038de8-41fc-46f6-b85e-7cebf7e9909a.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/b8038de8-41fc-46f6-b85e-7cebf7e9909a.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2302,7 +2221,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 16">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/177dd9cd-122b-46fb-afe3-a07ad8ab5ac1.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/177dd9cd-122b-46fb-afe3-a07ad8ab5ac1.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2310,7 +2229,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 17">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/debc1bdb-a1fd-4d38-b39d-7dc130df3b7b.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/debc1bdb-a1fd-4d38-b39d-7dc130df3b7b.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2318,7 +2237,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 18">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/54052ae9-9160-4980-9fa4-57e40646462d.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/54052ae9-9160-4980-9fa4-57e40646462d.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2326,7 +2245,15 @@ We take the time to inspect your property for signs of termites and treat them a
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 19">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/11b95833-d871-4d70-998d-d630701813cd.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/11b95833-d871-4d70-998d-d630701813cd.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <!-- Transition Wrapper 1 -->
+                                    <li class="flex flex-col" x-show="activeImage === 20">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/17bbf0f8-3f86-4d2a-96f1-b84ab7dc1157.jpeg" alt="R.O.W. Vegetation Management for Maverick Weed &amp; Pest Control in Mercury, TX" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2459,6 +2386,96 @@ We take the time to inspect your property for signs of termites and treat them a
                                         />
                                     </svg>
                                     <p lorem="1" class="relative text-lg font-medium">
+                                        They sprayed our trucking yard for weeds and highly recommend Josh and his team!
+                                    </p>
+                                </div>
+                                <footer class="flex items-center justify-between mt-8 space-x-4">
+                                    <div>
+                                        <span class="block font-medium text-primary">Michael N</span>
+                                        <span class="block font-medium">Pecos, TX</span>
+                                    </div>
+
+                                    <!-- Social Icon -->
+                                    <div class="flex-shrink-0">
+                                        <span class="sr-only">None</span>
+                                        
+                                    
+                                    </div>
+                                </footer>
+                            </blockquote>
+                        </li>
+                    
+                    
+                </ul>
+            
+                <!-- Single Testimonial Column -->
+                <ul class="space-y-8">
+                    <!-- Loop each of the items (rows) here -->
+                    
+                    
+                    
+
+                        <!-- Review Item -->
+                        <li class=" block  px-6 py-8 rounded-lg shadow md:px-8 xl:pl-16 xl:pr-6 bg-gray-50">
+                            <!-- Star Rating -->
+                            <div class="flex">
+                                <div aria-hidden="true" class="space-x-1.5 flex">
+                                    <!-- TODO: Simply use a for loop here `for i = 1; i < amountOfStars; i++` -->
+                                    
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
+                                            <path
+                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
+                                                fill="currentColor"
+                                            />
+                                        </svg>
+                                    
+                                </div>
+                                <!-- TODO: Add the current amount of stars here -->
+                                <span class="sr-only"> out of 5 stars</span>
+                            </div>
+
+                            <blockquote class="mt-6">
+                                <div class="relative">
+                                    <svg
+                                        aria-hidden="true"
+                                        class="absolute top-0 left-0 w-8 h-8 text-gray-200 -translate-x-3 -translate-y-2"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4Zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                    <p lorem="1" class="relative text-lg font-medium">
                                         Treated my house for a termite infestation that I had and would highly recommend Maverick Weed &amp; Pest ⭐⭐⭐⭐⭐
                                     </p>
                                 </div>
@@ -2470,22 +2487,7 @@ We take the time to inspect your property for signs of termites and treat them a
 
                                     <!-- Social Icon -->
                                     <div class="flex-shrink-0">
-                                        <span class="sr-only">Facebook</span>
-                                        
-                                        <svg
-                                            aria-hidden="true"
-                                            class="text-blue-900 transition-transform w-7 h-7"
-                                            viewBox="0 0 30 30"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
+                                        <span class="sr-only">None</span>
                                         
                                     
                                     </div>
@@ -2575,127 +2577,7 @@ We take the time to inspect your property for signs of termites and treat them a
 
                                     <!-- Social Icon -->
                                     <div class="flex-shrink-0">
-                                        <span class="sr-only">Facebook</span>
-                                        
-                                        <svg
-                                            aria-hidden="true"
-                                            class="text-blue-900 transition-transform w-7 h-7"
-                                            viewBox="0 0 30 30"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
-                                        
-                                    
-                                    </div>
-                                </footer>
-                            </blockquote>
-                        </li>
-                    
-                    
-                </ul>
-            
-                <!-- Single Testimonial Column -->
-                <ul class="space-y-8">
-                    <!-- Loop each of the items (rows) here -->
-                    
-                    
-                    
-
-                        <!-- Review Item -->
-                        <li class=" block  px-6 py-8 rounded-lg shadow md:px-8 xl:pl-16 xl:pr-6 bg-gray-50">
-                            <!-- Star Rating -->
-                            <div class="flex">
-                                <div aria-hidden="true" class="space-x-1.5 flex">
-                                    <!-- TODO: Simply use a for loop here `for i = 1; i < amountOfStars; i++` -->
-                                    
-                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
-                                            <path
-                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
-                                    
-                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
-                                            <path
-                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
-                                    
-                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
-                                            <path
-                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
-                                    
-                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
-                                            <path
-                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
-                                    
-                                        <svg class="text-yellow-300" width="30" height="30" fill="none">
-                                            <path
-                                                d="M14.049 2.927c.3-.921 1.603-.921 1.902 0l2.192 6.747a1 1 0 0 0 .951.69h7.094c.969 0 1.372 1.24.588 1.81l-5.74 4.17a1 1 0 0 0-.362 1.117l2.192 6.747c.3.922-.755 1.688-1.54 1.118l-5.738-4.17a1 1 0 0 0-1.176 0l-5.739 4.17c-.784.57-1.838-.197-1.539-1.118l2.192-6.746a1 1 0 0 0-.363-1.119l-5.739-4.17c-.784-.569-.38-1.808.588-1.808h7.094a1 1 0 0 0 .95-.691l2.193-6.747Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
-                                    
-                                </div>
-                                <!-- TODO: Add the current amount of stars here -->
-                                <span class="sr-only"> out of 5 stars</span>
-                            </div>
-
-                            <blockquote class="mt-6">
-                                <div class="relative">
-                                    <svg
-                                        aria-hidden="true"
-                                        class="absolute top-0 left-0 w-8 h-8 text-gray-200 -translate-x-3 -translate-y-2"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4Zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4Z"
-                                            fill="currentColor"
-                                        />
-                                    </svg>
-                                    <p lorem="1" class="relative text-lg font-medium">
-                                        They sprayed our trucking yard for weeds and highly recommend Josh and his team!
-                                    </p>
-                                </div>
-                                <footer class="flex items-center justify-between mt-8 space-x-4">
-                                    <div>
-                                        <span class="block font-medium text-primary">Michael N</span>
-                                        <span class="block font-medium">Pecos, TX</span>
-                                    </div>
-
-                                    <!-- Social Icon -->
-                                    <div class="flex-shrink-0">
-                                        <span class="sr-only">Facebook</span>
-                                        
-                                        <svg
-                                            aria-hidden="true"
-                                            class="text-blue-900 transition-transform w-7 h-7"
-                                            viewBox="0 0 30 30"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
+                                        <span class="sr-only">None</span>
                                         
                                     
                                     </div>
@@ -2736,7 +2618,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="39244"
+                                aria-controls="44777"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">What&#x27;s the best way to reach you?</span>
@@ -2756,7 +2638,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="39244">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="44777">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Give us a call or send us a text at (432) 448-4913. Thanks!</p>
                         </dd>
@@ -2769,7 +2651,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="39245"
+                                aria-controls="44778"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">Do you provide free estimates?</span>
@@ -2789,7 +2671,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="39245">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="44778">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Yes, we&#x27;ll always estimate the job for free. Just give us a call to get started.</p>
                         </dd>
@@ -2802,7 +2684,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="39246"
+                                aria-controls="44779"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">How are you different?</span>
@@ -2822,7 +2704,7 @@ We take the time to inspect your property for signs of termites and treat them a
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="39246">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="44779">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">We&#x27;re a customer-first company that will do whatever it takes to make sure the job is well done.</p>
                         </dd>
@@ -2857,7 +2739,7 @@ We take the time to inspect your property for signs of termites and treat them a
             <p id="proudLocation" class="text-xl text-gray-500">
                 <!-- Proudly serving Austin, TX and surrounding areas <br /><br />
                 Georgetown, Round Rock, Bastrop, Marble Falls, Burnet -->
-                Proudly Serving   All of Texas  
+                Proudly Serving   Mercury & Surrounding Areas  
             </p>
         </div>
         <!-- Map -->
@@ -2891,7 +2773,7 @@ We take the time to inspect your property for signs of termites and treat them a
                 <!-- Your map here -->
                 <div class="w-full h-full bg-gray-400">
                     <div style="height:500px; width:100%;" id="map"></div>
-                    <script >
+                    <script defer>
                         async function coordinate(url) {
                             const res = await fetch(url)
                             const coordinates = await res.json()
@@ -2923,7 +2805,7 @@ We take the time to inspect your property for signs of termites and treat them a
                 
                         // Create the map.
                         const map = new google.maps.Map(document.getElementById("map"), {
-                        zoom: 5,
+                        zoom: 8,
                         center: { lat: coordinates[0], lng: coordinates[1]},
                         mapTypeId: "terrain",
                         });
@@ -2949,6 +2831,7 @@ We take the time to inspect your property for signs of termites and treat them a
                     </script>
                     <script
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSw3qRocbSgfTrtxZbCsTjSHZaaJuUXF4&callback=initMap&libraries=&v=weekly"
+                    defer
                     async
                   ></script> 
               
@@ -3030,7 +2913,7 @@ We take the time to inspect your property for signs of termites and treat them a
               <div class="flex space-x-6">
                   <!-- are these conditional? and linked to corret links? -->
                   
-                  <a target="_blank" rel="noopener noreferrer" href="//facebook.com/profile.php?id=100063816742181" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
+                  <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/profile.php?id=100063816742181" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
                       <span class="sr-only">Facebook</span>
                       <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path
@@ -3064,7 +2947,7 @@ We take the time to inspect your property for signs of termites and treat them a
                   
                   
                   
-                  <a target="_blank" rel="noopener noreferrer" href="//www.bbb.org/us/tx/pecos/profile/pest-control/maverick-weed-and-pest-control-0825-1000170553" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.bbb.org/us/tx/pecos/profile/pest-control/maverick-weed-and-pest-control-0825-1000170553" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
                       <span class="sr-only">Tiktok</span>
                       <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path d="M9.43752 0.0166667C10.5292 0 11.6125 0.00833333 12.6959 0C12.7625 1.275 13.2209 2.575 14.1542 3.475C15.0875 4.4 16.4042 4.825 17.6875 4.96667V8.325C16.4875 8.28333 15.2792 8.03333 14.1875 7.51667C13.7125 7.3 13.2709 7.025 12.8375 6.74167C12.8292 9.175 12.8459 11.6083 12.8209 14.0333C12.7542 15.2 12.3709 16.3583 11.6959 17.3167C10.6042 18.9167 8.71252 19.9583 6.77085 19.9917C5.57919 20.0583 4.38752 19.7333 3.37085 19.1333C1.68752 18.1417 0.504186 16.325 0.329186 14.375C0.312519 13.9583 0.304186 13.5417 0.320852 13.1333C0.470852 11.55 1.25419 10.0333 2.47085 9C3.85419 7.8 5.78752 7.225 7.59585 7.56667C7.61252 8.8 7.56252 10.0333 7.56252 11.2667C6.73752 11 5.77085 11.075 5.04585 11.575C4.52085 11.9167 4.12085 12.4417 3.91252 13.0333C3.73752 13.4583 3.78752 13.925 3.79585 14.375C3.99585 15.7417 5.31252 16.8917 6.71252 16.7667C7.64585 16.7583 8.53752 16.2167 9.02085 15.425C9.17918 15.15 9.35419 14.8667 9.36252 14.5417C9.44585 13.05 9.41252 11.5667 9.42085 10.075C9.42919 6.71667 9.41252 3.36667 9.43752 0.0166667V0.0166667Z" fill="#9CA3AF"/>
@@ -3110,6 +2993,13 @@ We take the time to inspect your property for signs of termites and treat them a
                           
                           
                           
+                          <li>
+                              <a
+                                  href='sitemap.xml'
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Sitemap</a
+                              >
+                          </li>
                       </ul>
                   </div>
                   <!-- Services Links -->
@@ -3155,7 +3045,7 @@ We take the time to inspect your property for signs of termites and treat them a
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
-                                  >All of Texas</a
+                                  >Mercury, TX</a
                               >
                           </li>
                           
@@ -3399,32 +3289,32 @@ We take the time to inspect your property for signs of termites and treat them a
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-143118"
-                                            name="143118"
+                                            id="contact-service-157887"
+                                            name="157887"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-143118" class="ml-3 text-sm font-medium text-gray-700">R.O.W. Vegetation Management</label>
+                                        <label for="contact-label-service-157887" class="ml-3 text-sm font-medium text-gray-700">R.O.W. Vegetation Management</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-143119"
-                                            name="143119"
+                                            id="contact-service-157888"
+                                            name="157888"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-143119" class="ml-3 text-sm font-medium text-gray-700">Termite Treatment</label>
+                                        <label for="contact-label-service-157888" class="ml-3 text-sm font-medium text-gray-700">Termite Treatment</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-143120"
-                                            name="143120"
+                                            id="contact-service-157889"
+                                            name="157889"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-143120" class="ml-3 text-sm font-medium text-gray-700">General Pest Control</label>
+                                        <label for="contact-label-service-157889" class="ml-3 text-sm font-medium text-gray-700">General Pest Control</label>
                                     </div>
                                 
                             </div>
@@ -3586,7 +3476,7 @@ We take the time to inspect your property for signs of termites and treat them a
                     <!-- Yelp Link -->
                     
                     <li>
-                        <a target="_blank" rel="noopener noreferrer" href="//https://facebook.com/profile.php?id=100063816742181/reviews" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/profile.php?id=100063816742181/reviews" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
                     </li>
                     
                 </ul>
