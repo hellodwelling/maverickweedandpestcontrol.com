@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://maverickweedandpestcontrol.com/sitemap.xml
